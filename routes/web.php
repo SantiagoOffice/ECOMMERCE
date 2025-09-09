@@ -13,9 +13,9 @@ Route::get('/products', function () {
 Route::get('/products/{id}/{category?}', function ($id, $category = null) {
 
     if ($category != null) {
-        return "Detail products: " . $id . ". With Category: " . $category;; 
+        return "Detail products: " . $id . ". With Category: " . $category;
     } else {
-        return "Detail products: " . $id . 
+        return "Detail products: " . $id;
     }
 });
 
